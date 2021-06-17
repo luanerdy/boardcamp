@@ -1,4 +1,4 @@
-const addCategories = (app, connection) => {
+const addCategory = (app, connection) => {
 	app.post('/categories', async (req, res) => {
 		const { name } = req.body;
 		let sql = 'SELECT * FROM categories WHERE name = $1';
@@ -22,4 +22,4 @@ const addCategories = (app, connection) => {
 	});
 };
 
-export default addCategories;
+export default addCategory;
