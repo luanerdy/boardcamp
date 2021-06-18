@@ -7,7 +7,7 @@ const customers = (app, connection) => {
     getCustomers(app, connection);
     addCustomer(app, connection);
     getCustomerById(app, connection);
-    updateCustomer(app, connection)
+    updateCustomer(app, connection);
 };
 
 export default customers;
